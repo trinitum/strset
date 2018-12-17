@@ -42,8 +42,7 @@ func TestSet(t *testing.T) {
 		t.Fatal("s1 contains baz")
 	}
 
-	s2 := New()
-	s2.Add("bar", "boo")
+	s2 := New("bar", "boo")
 	if len(s2) != 2 {
 		t.Fatalf("expected len of s2 to be 2")
 	}

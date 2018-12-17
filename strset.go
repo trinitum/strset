@@ -6,9 +6,11 @@ package strset
 // Set represents a set of string values
 type Set map[string]struct{}
 
-// New returns a new empty set
-func New() Set {
-	return make(map[string]struct{})
+// New returns a new set, if arguments given, they are added to the set
+func New(elem ...string) Set {
+	s := make(Set)
+	s.Add(elem...)
+	return s
 }
 
 // Add adds new values to the set
