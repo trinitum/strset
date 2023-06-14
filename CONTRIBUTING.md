@@ -17,5 +17,5 @@ clearly describe the purpose of each commit, use `git rebase` to eliminate any
 typo/fixup commits.
 
 If the change you are planning to work on is not trivial and requires
-noticeable efforts, it make sense to open an issue before starting the work and
-discuss it with the maintainer the best way to proceed.
+noticeable efforts, it makes sense to open an issue before starting the work
+and discuss with me the best way to proceed.

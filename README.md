@@ -2,7 +2,7 @@
 
 Go library providing methods for string sets
 
-[![GoDoc](https://godoc.org/gitlab.com/shaydo/strset?status.svg)](http://godoc.org/gitlab.com/shaydo/strset)
+[![GoDoc](https://pkg.go.dev/badge/gitlab.com/shaydo/strset)](http://pkg.go.dev/gitlab.com/shaydo/strset)
 
 ```go
 	set := New()

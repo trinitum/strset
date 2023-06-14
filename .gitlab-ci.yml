@@ -3,7 +3,19 @@ image: golang:latest
 stages:
     - test
 
+sast:
+  stage: test
+
+include:
+- template: Security/SAST.gitlab-ci.yml
+
 test:
     stage: test
     script:
       - go test -race ./...
+
+lint:
+  stage: test
+  image: golangci/golangci-lint
+  script:
+  - golangci-lint run -D errcheck -E gosec -E revive
